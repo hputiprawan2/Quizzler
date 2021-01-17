@@ -17,3 +17,15 @@ struct Question {
         answer = a
     }
 }
+
+struct Question_MultipleChoices {
+    let questionText: String
+    let options: [String]
+    let answer: String
+    
+    init(q: String, a: [String], correctAnswer: String) {
+        questionText = q
+        options = a
+        answer = correctAnswer
+    }
+}

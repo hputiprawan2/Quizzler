@@ -8,23 +8,21 @@
 
 import UIKit
 
-class welcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var TFButton: UIButton!
+    @IBOutlet weak var MCButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func TFButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "TFPage", sender: self)
     }
-    */
-
+    
+    @IBAction func MCButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "MCPage", sender: self)
+    }
 }
