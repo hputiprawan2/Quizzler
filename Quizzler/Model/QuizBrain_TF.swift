@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct QuizBrain {
+struct QuizBrain_TF {
     let quizes = [
         Question(q: "A slug's blood is green.", a: "True"),
         Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
